@@ -30,7 +30,7 @@ app.get("/content", async (req: Request, res: Response) => {
     })
 })
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8080
 try {
     app.listen(port, () => {
         console.log(`Running at Port ${port}...`)

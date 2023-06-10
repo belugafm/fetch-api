@@ -8,10 +8,10 @@ const consumerKey = process.env.CONSUMER_KEY || ""
 const consumerSecret = process.env.CONSUMER_SECRET || ""
 const accessToken = process.env.ACCESS_TOKEN || ""
 const accessTokenSecret = process.env.ACCESS_TOKEN_SECRET || ""
-console.log(consumerKey)
-console.log(consumerSecret)
-console.log(accessToken)
-console.log(accessTokenSecret)
+console.log("consumerKey", consumerKey)
+console.log("consumerSecret", consumerSecret)
+console.log("accessToken", accessToken)
+console.log("accessTokenSecret", accessTokenSecret)
 const configuration = new Configuration({
     organization: process.env.OPENAI_ORGANIZATION,
     apiKey: process.env.OPENAI_API_KEY,

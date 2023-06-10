@@ -42,6 +42,7 @@ RUN apt update -y && \
 
 RUN npm install -g npm@latest
 COPY . .
+COPY src/.env src/.env
 RUN npm install
 RUN npm run build
 ENV PORT 8080
