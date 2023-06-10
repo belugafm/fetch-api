@@ -6,7 +6,7 @@ const app: Application = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get("/content", async (req: Request, res: Response) => {
+app.get("/api/content", async (req: Request, res: Response) => {
     const url = req.query.url
     if (url == null) {
         return res.status(200).send({
